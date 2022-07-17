@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--Standard html boilerplate-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--link to the CSS file-->
+        <link rel="stylesheet" href="clock.css">
+    </head>
+    <body>
+        <!--The div with a .box class is the large black background with an orange border-->
+        <div class="box">
+            <!--This box contains the clock at the top of the page. This code is in javascript-->
+            <div class="box1" id = "clock" onload="currentTime()"></div>
+           <!--All of the .box2 divs contain the todo lists-->
+            <div class="box2">
+                <h2>Todo Today</h2>
+                <ol>
+                    <!--The lists, making up the todo lists-->
+                    <li><input class="checkbox" checked type="checkbox"> Make erpolley.com <br> a coder page</li>
+                    
+                
+                </ol>
+            </div> 
+
+            <div class="box2">
+                <h2>DAILY</h2>
+                <ol>
+                    <li><input class="checkbox" type="checkbox"> Make a project and <br>post it on  Github </li>
+                    <li><input class="checkbox" type="checkbox"> freecodecamp JavaScript <br> Cert</li>
+                 
+                </ol>
+            </div>
+
+
+      
+        <div class="box2">
+            <h2>Weekly</h2>
+            <ol>
+                <li><input class="checkbox" type="checkbox"> Update your portfolio </li>
+                <li><input class="checkbox" type="checkbox"> Record yourself coding </li>
+                <li><input class="checkbox" type="checkbox"> Friday Vlog </li>
+            </ol>
+        </div>
+        <br>
+        <!--the calender is embedded from google. useful for planning and scheduling todo lists.-->
+        <div class="box1">
+            <iframe src="https://calendar.google.com/calendar/embed?src=94f16qr3it7sd3h9nsadl8ssnc%40group.calendar.google.com&ctz=America%2FLos_Angeles" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+        </div>
+        </div>
+        <!--link to the javascript script-->
+        <script src="clock.js" async defer></script>
+    </body>
+</html>

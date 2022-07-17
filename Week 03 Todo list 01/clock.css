@@ -1,0 +1,55 @@
+body {
+    font-family: Arial;
+    font-size: 100%;
+    background: #f06d06;
+    color: #f06d06;
+
+  }
+/* Each box class contains the background box, clock, todo list, or calender displayed on screen.
+This first box, is the large black background */
+  .box   {
+    height: auto;
+    border: 20px solid rgba(165, 42, 42, 15%);
+    background-color: black;
+    display: grid;
+    justify-content: space-around;
+    grid-template-columns: 1fr 2fr 1fr;
+
+  }
+/* box2 contains the todo list formating */
+  .box2 {
+    font-size: 140%;
+    padding-top: 20%;
+    margin: auto;
+    padding: auto;
+    width: 380px;
+    height: 400px;
+    border: 10px solid rgb(240, 109, 6);
+    background-color: rgba(165, 42, 42, 25%);
+  }
+
+  h2 {
+    text-align: center;
+    /* box1 contains the calender and clock formating */
+  }
+  .box1 {
+    font-size: 400%;
+    margin: auto;
+    padding-top: auto;
+    padding: auto;
+    width: auto;
+    height: auto;
+    border: 10px solid #f06d06;
+    background-color: rgba(165, 42, 42, 25%);
+    /* this allows the grid item to span across the like a banner. starting at 1, ending at -1 */
+    grid-column: 1 / -1;
+  }
+/* This changes the checkbox size and centers it slightly */
+  .checkbox {
+    width: 30px;
+    height: 30px;
+    margin: auto;
+    padding: auto;
+    border: 2px solid black;
+    
+  }
